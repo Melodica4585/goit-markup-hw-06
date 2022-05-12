@@ -619,10 +619,8 @@ margin-left: 50px;
     flex-direction: column;
 }
 
-.sign-up {
-    margin-left: 93px;
-    width: 570px;
-    height: 86px;
+.subscription {
+    margin-left: auto;
 }
 
 .form-label {
@@ -835,7 +833,7 @@ margin-left: 50px;
 }
 
 .modal {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
 
@@ -851,6 +849,8 @@ margin-left: 50px;
     transform: translate(-50%, -50%) scale(1);
     
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 40px;
 }
 
 .close-modal {
@@ -958,12 +958,16 @@ margin-left: 50px;
 .modal-form {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding-bottom: 40px;
 }
 
 .modal-item {
     position: relative;
     margin-bottom: 10px;
+}
+
+.modal-item:last-child {
+    margin-bottom: 0;
 }
 
 .text-form{
@@ -991,7 +995,7 @@ margin-left: 50px;
 }
 
 .input-form, 
-.textarea-form{
+.textarea-form {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1002,9 +1006,10 @@ margin-left: 50px;
     transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-form{
+.textarea-form {
     height: 120px;
     padding: 12px 16px;
+    display: block;
 }
 
 textarea {
@@ -1091,6 +1096,7 @@ textarea {
 .button-modal {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -1098,8 +1104,6 @@ textarea {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    width: 200px;
-    height: 50px;
     border: none;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
@@ -1107,6 +1111,7 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    padding: 10px 55px;
 }
 
 .label-form {
