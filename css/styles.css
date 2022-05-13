@@ -636,7 +636,8 @@ margin-left: 50px;
     text-transform: uppercase;
     margin-bottom: 20px;
     
-    color: var(--secondary-text-color);
+    background-color: #2F303A;
+    color: #fff;
     }
 
 .item-form {
@@ -652,6 +653,7 @@ margin-left: 50px;
     border-radius: 4px;
     padding: 15px;
     background: #2F303A;
+    color: #fff;
 }
 
 .form-label input::placeholder{
@@ -849,8 +851,12 @@ margin-left: 50px;
     transform: translate(-50%, -50%) scale(1);
     
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    padding: 40px;
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
 }
 
 .close-modal {
@@ -954,12 +960,6 @@ margin-left: 50px;
     margin-left: 10px;
     fill: var(--secondary-text-color);
 }  
-
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-}
 
 .modal-item {
     position: relative;
@@ -1127,4 +1127,5 @@ textarea {
 
 .form-input {
     display: flex;
+    color: #757575;
 }
